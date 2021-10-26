@@ -1,3 +1,23 @@
 name = input("what is your name?")
 age = input("how old are you?")
 print("hello! " +name+ " you are: " + age + " years old.") 
+
+isSunny = bool(input("is it sunny outside today?"))
+isWarm = bool(input("Is it warm outside?"))
+isWindy = bool(input("Is it windy?"))
+
+if (isSunny and isWarm):
+    print("It's a nice day outside! no need for a jacket")
+elif (isSunny and isWarm and isWindy):
+    print("It's a nice day outside!  Might need a light jacket, its windy!")
+elif (isSunny and isWindy):
+    print("It's probably gonna be a little chilly out today!  Bring a jacket for good measure.")
+elif(isWindy and isWarm):
+    print("It's warm out today but a little windy!  Bring a light jacket")
+elif(isSunny):
+    print("It's a nice sunny day out today!  Enjoy the nice weather :)")
+elif(isWindy):
+    print("It's gonna be windy today!  Bring a sturdy jacket!")
+elif(isWarm):
+    print("classic warm day!  Take advantage of this opportunity")
+  
